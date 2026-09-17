@@ -53,6 +53,34 @@
     background-color: #0C2C47;
 }
 
+/* Tashfeen: CSS addition to Pane3 */
+
+.abtpane {
+    padding: 10px;
+}
+
+.images {
+    font-size: 0;
+}
+
+.images img {
+    width: 100%;
+    display: block;
+}
+
+.pane3 div h4 {
+    text-align: center;
+    color: white;
+    padding: 25px 0px;
+}
+
+.pane3 div p {
+    text-align: center;
+    color: white;
+    font-size: small;
+}
+
+/* --- */
 
 .pane4 {
     position: relative;
