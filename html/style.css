@@ -166,3 +166,18 @@ footer {
     margin-right: auto;
 
 }
+
+.Team p a {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0;
+    margin-top 0;
+    border-radius 0;
+    font-weight: normal;
+}
+
+.Team p a:hover {
+    background-color: transparent;
+    color: #aaaaaa;
+    
+}
