@@ -223,3 +223,20 @@ nav a:hover {
 html {
     scroll-behavior: smooth;
 }
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #cccccc;
+}
