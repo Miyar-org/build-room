@@ -76,9 +76,10 @@ main {
 }
 
 .Team p {
-    color: #cbd5e1;
-    line-height: 1.7;
-    margin-bottom: 20px;
+    color: #d4d4d4;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 17px;
 }
 
 /* Profile Buttons */
@@ -163,5 +164,5 @@ footer {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
