@@ -40,6 +40,20 @@
     margin: 1vh;
     width: 5vw;
     height: 4vw;
+    scale: 90%;
+    rotate: 0deg;
+
+    transition: scale 0.25s ease-in-out;
+    transition: rotate 0.25s ease-in-out;
+}
+
+
+.landing .landingtitle .menuicon:hover {
+    scale: 100%;
+}
+
+.landing .landingtitle .menuicon:active{
+    rotate: 90deg;
 }
 
 
@@ -136,6 +150,7 @@
         transform: translateY(0px);
     }
 }
+
 
 
 
@@ -311,7 +326,7 @@
         font-weight: 500;
         letter-spacing: 1vw;
         /* color: #E2A54D; */
-        color: #97d3cd;
+        color: #0C2C47;
         text-align: center;
 
     }    
@@ -328,7 +343,7 @@
         font-weight: 500;
         letter-spacing: 1vw;
         /* color: #EFEAE6; */
-        color: #E4F2EA;
+        color: #E2A54D;
         text-align: center;
 
     }
@@ -345,7 +360,7 @@
         font-weight: 500;
         letter-spacing: 0.8vw;
         /* color: #E4F2EA; */
-        color: #0C2C47;
+        color: #E4FEEA;
         text-align: center;
 
     }
@@ -361,7 +376,7 @@
         font-size: 10vw;
         font-weight: 500;
         letter-spacing: 0.8vw;
-        color: #E4F2EA;
+        color: #E2A54D;
         /* color: #0C2C47; */
         text-align: center;
 
@@ -379,7 +394,7 @@
         font-weight: 500;
         letter-spacing: 0.8vw;
         /* color: #E4F2EA; */
-        color: #0C2C47;
+        color: #E4FEEA;
         text-align: center;
 
     }
