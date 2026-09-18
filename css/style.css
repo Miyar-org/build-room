@@ -24,7 +24,26 @@
     width: 100%;
     height: 103vh;
     background-color: #0C2C47;
+    overflow: hidden;
 }
+
+
+.landing .menupage .menubg {
+    position: absolute;
+    fill: #EFEAE6;
+    top: -4vw;
+    left: -4vw;
+    scale: 0%;
+    z-index: 5;
+
+    transition: scale 0.5s ease-in-out;
+}
+
+
+body.menuaction .landing .menupage .menubg {
+    scale: calc((2* (hypot(100vw, 100vh) + 5vw)) / 1px * 1%);
+}
+
 
 
 .landing .landingtitle {
@@ -39,12 +58,12 @@
     overflow: hidden;
     margin: 1vh;
     width: 5vw;
-    height: 4vw;
+    height: 5vw;
     scale: 90%;
     rotate: 0deg;
+    z-index: 10;
 
-    transition: scale 0.25s ease-in-out;
-    transition: rotate 0.25s ease-in-out;
+    transition: scale 0.25s ease-in-out, rotate 0.25s ease-in-out;
 }
 
 
@@ -52,9 +71,6 @@
     scale: 100%;
 }
 
-.landing .landingtitle .menuicon:active{
-    rotate: 90deg;
-}
 
 
 .landing .landingtitle .titletag {
