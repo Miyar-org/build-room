@@ -65,8 +65,9 @@ main {
 }
 
 .Team:hover {
-    transform: translate(-5px);
-    border-color: #666666;
+    transform: translateY(-8px);
+    border-color: #ffffff;
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.12);
 }
 
 .Team h2 {
