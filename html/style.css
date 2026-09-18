@@ -94,11 +94,12 @@ main {
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .Team a:hover {
     background-color: #cccccc;
+    transform: translateY(-2px);
 }
 
 /* Footer */
