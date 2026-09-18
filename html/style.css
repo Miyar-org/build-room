@@ -22,11 +22,11 @@ nav a {
     color: #f8fafc;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #ffffff;
 }
 
 /* Main Content */
@@ -37,18 +37,18 @@ main {
 }
 
 /* Team Introduction */
-.team-intro {
+.Team-intro {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.team-intro h1 {
+.Team-intro h1 {
     font-size: 48px;
     margin-bottom: 15px;
     color: #ffffff;
 }
 
-.team-intro p {
+.Team-intro p {
     color: #94a3b8;
     font-size: 18px;
     line-height: 1.7;
@@ -111,7 +111,7 @@ footer {
 }
 
 /* Team Grid */
-.team-grid {
+.Team-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -119,7 +119,7 @@ footer {
 
 /* Mobile */
 
-.team-intro h1 {
+.Team-intro h1 {
         font-size: 36px;
     }
 
@@ -142,7 +142,7 @@ footer {
 
 }
 
-.team h1 {
+.Team h1 {
     font-size: 42px;
     margin-top: 0;
     margin-bottom: 25px;
