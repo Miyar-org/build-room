@@ -78,6 +78,7 @@
 
             const searchBox = document.getElementById("teamSearch");
             const teamCards = document.querySelectorAll(".Team");
+            const clearSearch = document.getElementById("clearSearch");
 
             searchBox.addEventListener("input", function () {
                 const searchText = searchBox.value.toLowerCase();
@@ -99,6 +100,14 @@
                 } else {
                     document.getElementById("noResults").style.display = "block";
                 }
+            });
+
+            clearSearch.addEventListener("click", function () {
+                searchBox.value = "";
+                teamCards.forEach(function(card) {
+                    card.style.display = "block";
+                });
+                document.getElementById("noResults").style.display = "none";
             });
         </script>
 
