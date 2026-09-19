@@ -30,24 +30,103 @@
     <!-- dcmitul: I commeted the above code cus i'll be changing most of it. my code starts from here -->
 
     <div class="landing">
-        <div class="landingtitle">
-            <div class="pure-g">     
-                <div class="pure-u-1-1">
-                    <div class="title">
-                    Build Room
-                    </div>
+        <div class="menupage">
+            <div class="menubg">
+                <svg width="100px" height="100px" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+            </div>
+            <div class="menu">
+                <div class="index">
+                    <div class="pure-g">
+                        <div class="pure-u-1">
+                            <div class="indexhead">
+                                Index
+                            </div>
+                        </div>
 
-                    <div class="tagline">
-                        --Placeholder--
+                        <div class="pure-u-1">
+                            <div class="indexitems" id="index">
+                                <ul>
+                                    <br><br>
+                                    <li>
+                                        <a href="#home">
+                                            ● Home
+                                        </a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <a href="#proj">
+                                            ● Projects
+                                        </a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <a href="#abt">
+                                            ● About
+                                        </a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <a href="#tashfeen">
+                                            ● Tashfeen Miyar
+                                        </a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <a href="#ahmad">
+                                            ● Ahmad Mustafa
+                                        </a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <a href="#dcm">
+                                            ● DCMitul
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="landingtitle" id="home">
+            <div class="pure-g">     
+                <div class="pure-u-12-1">
+                    <div class="menuicon" id="Menuicon">
+                        <img class="pure-img" src="assets/icons/menu icon.svg" alt="Menu Icon">
+                    </div>
+                </div>
+                <div class="titletag">
+                    <div class="pure-u-1-1">
+                        <div class="title">
+                        Build Room
+                        </div>
+
+                        <div class="tagline">
+                            --Placeholder--
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 
     <!-- The Projects page/pane -->
-    <div class="pane2">
+    <section class="pane2" id="proj">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="projpane">
@@ -55,15 +134,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- The about page/pane -->
-    <div class="pane3">
+    <section class="pane3" id="abt">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="abtpane">
-                    ABOUT
+                    About
                 </div>
             </div>
             <div class="pure-u-1-2">
@@ -80,11 +159,11 @@
                 <p>Build Room is a small team of three beginners figuring things out as we go. We barely knew each other before starting, and none of us really knows where this is going yet. We’re here to learn, build a few things, break a few things, and hopefully end up with something we’re actually proud of.</p>
             </div>
         </div>
-    </div>
+    </section>
     
 
     <!-- Tashfeen's Profile -->
-    <div class="pane4">
+    <section class="pane4" id="tashfeen">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="name1">
@@ -92,11 +171,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- Ahmad's Profile -->
-    <div class="pane5">
+    <section class="pane5" id="ahmad">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="name2">
@@ -104,11 +183,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- DCMitul's profile -->
-    <div class="pane6">
+    <section class="pane6" id="dcm">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="name3">
@@ -116,7 +195,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     
+
+    <script src="js/script.js"></script>
 </body>
 </html>
