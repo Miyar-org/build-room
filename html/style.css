@@ -288,6 +288,10 @@ html {
     border-color: #ffffff;
 }
 
+#teamSearch::placeholder {
+    color: #777777;
+}
+
 #noResults {
     display: none;
     text-align: center;
