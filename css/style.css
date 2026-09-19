@@ -6,6 +6,11 @@
     overflow-x: hidden;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* dcmitul: do not fix the background colors in the body */
 
 /* header {
@@ -93,9 +98,14 @@ body.menuaction .landing .menupage .index .indexhead {
     position: inherit;
     left: 40vw;
     text-align: left;
-    color: #2D5652;
     opacity: 0;
     z-index: 6;
+}
+
+
+.indexitems a {
+    color: #2D5652;
+    text-decoration: none;
 }
 
 
