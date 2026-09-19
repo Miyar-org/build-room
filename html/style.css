@@ -268,3 +268,22 @@ html {
     margin-top: -15px;
     margin-bottom: 35px;
 }
+
+#teamSearch {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 35px;
+    padding: 14px 18px;
+    box-sizing: border-box;
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#teamSearch:focus {
+    border-color: #ffffff;
+}
