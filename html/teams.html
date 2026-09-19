@@ -72,6 +72,23 @@
             function openProfile(page) {
                 window.location.href = page;
             }
+
+            const searchBox = document.getElementById("teamSearch");
+            const teamCards = document.querySelectorAll(".Team");
+
+            searchBox.addEventListener("input", function() {
+                const searchText = searchBox.value.toLowerCase();
+
+                teamCards.forEach(function(card) {
+                    const name = card.querySelector("h2").textContent.toLowerCase();
+
+                    if (name.includes(searchText)) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
         </script>
 
 </body>
