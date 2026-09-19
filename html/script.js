@@ -28,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    searchBox.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+            clearSearch.click();
+        }
+
+    });
+
     clearSearch.addEventListener("click", function () {
 
         searchBox.value = "";
