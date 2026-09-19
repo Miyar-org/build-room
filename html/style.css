@@ -316,3 +316,7 @@ html {
 #clearSearch:hover {
     background-color: #333333;
 }
+
+#clearSearch:hover {
+    transform: translateY(-2px);
+}
