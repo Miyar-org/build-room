@@ -1,51 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
-    function openProfile(page) {
-        window.location.href = page;
-    }
 
     const searchBox = document.getElementById("teamSearch");
-    const teamCards = document.querySelectorAll(".Team");
+    const teamCards = document.querySelectorAll(".Team")
     const clearSearch = document.getElementById("clearSearch");
     const noResults = document.getElementById("noResults");
 
     searchBox.addEventListener("input", function () {
-        const searchText = searchBox.ariaValueMax.trim().toLowerCase();
+        const searchText = searchBox.value.trim().toLowerCase();
         let found = false;
 
         teamCards.forEach(function (card) {
-            const name = card.querySelector("h2").textContent.toLowerCase();
+            const cardText = card.textContent.Content.toLowerCase();
 
-            if (name.includes(searchText)) {
-                card.style.display = "block";
+            if (cardText.includes(searchText)) {
+                card.Style.display = "";
                 found = true;
             } else {
                 card.style.display = "none";
             }
+        });
+
+        noResults.style.display = found ? "none" : "block"; 
     });
 
-    if (found) {
-        noResults.style.display = "none";
-    } else {
-        noResults.style.display = "block";
-    }
-});
+    clearSearch.addEventListener("click", function () {
+        searchBox.value = "";
 
-clearSearch.addEventListener("click", function () {
-    searchBox.value = "";
+        teamCards.forEach(function (card) {
+            card.style.display = "";
+        });
 
-    teamCards.forEach(function (card) {
-        card.style.display = "block";
+        noResults.style.dislpay = "none";
     });
-
-    noResults.style.display = "none";
-});
-
-teamCards.forEach(function (card) {
-    card.addEventListener("click", function () {
-        const page = card.getAttribute("onclick").match(/'([^']+)'/)[1];
-        openProfile(page);
-    });
-});
 
 });
