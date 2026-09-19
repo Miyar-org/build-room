@@ -90,11 +90,11 @@
             const clearSearch = document.getElementById("clearSearch");
 
             searchBox.addEventListener("input", function () {
-                const searchText = searchBox.value.toLowerCase();
+                const searchText = searchBox.value.trim().toLowerCase();
                 let found = false;
 
                 teamCards.forEach(function (card) {
-                    const name = card.querySelector("h2").textContent.toLowerCase();
+                    const name = card.textContent.toLowerCase();
 
                     if (name.includes(searchText)) {
                         card.style.display = "block";
