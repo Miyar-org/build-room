@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
             card.style.display = "block";
         });
 
-        noResults.style.dislpay = "none";
-        
+        noResults.style.display = "none";
+
     });
 
 });
