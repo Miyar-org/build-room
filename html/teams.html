@@ -78,18 +78,26 @@
             const searchBox = document.getElementById("teamSearch");
             const teamCards = document.querySelectorAll(".Team");
 
-            searchBox.addEventListener("input", function() {
+            searchBox.addEventListener("input", function () {
                 const searchText = searchBox.value.toLowerCase();
+                let found = false;
 
-                teamCards.forEach(function(card) {
+                teamCards.forEach(function (card) {
                     const name = card.querySelector("h2").textContent.toLowerCase();
 
                     if (name.includes(searchText)) {
                         card.style.display = "block";
+                        found = true;
                     } else {
                         card.style.display = "none";
                     }
                 });
+
+                if (found) {
+                    document.getElementById("noResults").style.display = "none";
+                } else {
+                    document.getElementById("noResults").style.display = "block";
+                }
             });
         </script>
 
