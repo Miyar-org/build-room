@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const clearSearch = document.getElementById("clearSearch");
     const noResults = document.getElementById("noResults");
     const memberCount = document.getElementById("memberCount");
+    const savedSearch = localStorage.getItem("teamSearch");
 
     searchBox.addEventListener("input", function () {
+
+        localStorage.setItem("teamSearch", searchBox.value);
 
         const searchText = searchBox.value.toLowerCase();
         let found = false;
