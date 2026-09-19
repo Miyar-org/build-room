@@ -247,3 +247,10 @@ html {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
 }
+
+.members-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
