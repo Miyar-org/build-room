@@ -162,7 +162,6 @@ body.menuaction .landing .menupage .index .indexitems {
 .pane3 {
     position: relative;
     width: 100%;
-    height: 50vh;
     padding-bottom: 40px;
     box-sizing: border-box;
     /* background-color: #2D5652; */
@@ -175,7 +174,7 @@ body.menuaction .landing .menupage .index .indexitems {
     padding: 10px;
 }
 
-.images img {
+.images {
     max-width: 100%;
     height: auto;
     display: block;
@@ -532,13 +531,20 @@ body.menuaction .landing .menupage .index .indexitems {
 /* Tashfeen Miyar: added this for about section description */
 
 @media (max-width: 600px) {
-    .abt-description {
-        text-align: left;
+    .abt-title {
+        margin: 0;
     }
 
-    .abt-images {
+    .abt-description {
+        text-align: left;
+        margin-top: 8px;
+        margin-left: 4px;
+        font-size: 1rem;
+    }
+
+    .pure-g .abt-images {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 }
 
