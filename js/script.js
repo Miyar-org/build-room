@@ -8,3 +8,10 @@ menuIcon.addEventListener('click', () => {
     body.classList.toggle('menuaction');
 
 });
+
+const indexitem = document.querySelector('.index');
+indexitem.addEventListener('click', () => {
+    degrees += 90;
+    menuIcon.style.rotate = `${degrees}deg`;
+    body.classList.remove('menuaction');
+});
