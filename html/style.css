@@ -254,3 +254,9 @@ html {
     color: #ffffff;
     margin-bottom: 30px;
 }
+
+@media (max-width: 600px) {
+    .members-title {
+        font-size: 26px;
+    }
+}
