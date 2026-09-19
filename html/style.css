@@ -41,7 +41,7 @@ main {
     text-align: center;
     margin-bottom: 50px;
     border-bottom: 1px solid #333333;
-    padding-bottom 30px;
+    padding-bottom: 30px;
 }
 
 .Team-intro h1 {
@@ -246,4 +246,17 @@ html {
 .Team:focus {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
+}
+
+.members-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    .members-title {
+        font-size: 26px;
+    }
 }
