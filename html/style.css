@@ -287,3 +287,11 @@ html {
 #teamSearch:focus {
     border-color: #ffffff;
 }
+
+#noResults {
+    display: none;
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
