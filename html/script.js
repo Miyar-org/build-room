@@ -1,3 +1,5 @@
+alert("JavaScript is connected!");
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const searchBox = document.getElementById("teamSearch");
