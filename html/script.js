@@ -40,4 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    teamCards.forEach(function (card) {
+
+        card.addEventListener("keydown", function (event) {
+
+            if (event.key === "Enter") {
+                card.click();
+
+            }
+
+        });  
+
+     });
+
 });
