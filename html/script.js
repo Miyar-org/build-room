@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        memberCount.textContent = "Showing " + visibleMembers + " members ";
+        memberCount.textContent = "Showing " + visibleMembers + (visibleMembers === 1 ? " member" : " members");
     });
 
     searchBox.addEventListener("keydown", function (event) {
