@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const teamCards = document.querySelectorAll(".Team")
     const clearSearch = document.getElementById("clearSearch");
     const noResults = document.getElementById("noResults");
+    const memberCount = document.getElementById("memberCount");
 
     searchBox.addEventListener("input", function () {
 
@@ -26,6 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             noResults.style.display = "block";
         }
+
+        let visibleMembers = 0;
+
+        teamCards.forEach(function (card) {
+            if (card.style.display !== "none") {
+                visibleMembers++;
+
+            }
+        });
+
+        memberCount.textContent = "Showing " + visibleMembers + " members ";
     });
 
     searchBox.addEventListener("keydown", function (event) {
@@ -45,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         noResults.style.display = "none";
+
+        memberCount.textContent = "Showing " + teamCards.length + " members";
 
     });
 
