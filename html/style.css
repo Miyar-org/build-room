@@ -260,3 +260,11 @@ html {
         font-size: 26px;
     }
 }
+
+.members-description {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
