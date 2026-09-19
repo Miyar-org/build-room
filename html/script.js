@@ -6,31 +6,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const noResults = document.getElementById("noResults");
 
     searchBox.addEventListener("input", function () {
-        const searchText = searchBox.value.trim().toLowerCase();
+
+        const searchText = searchBox.value.toLowerCase();
         let found = false;
 
         teamCards.forEach(function (card) {
-            const cardText = card.textContent.Content.toLowerCase();
 
-            if (cardText.includes(searchText)) {
-                card.Style.display = "";
+            if (card.textContent.toLowerCase().includes(searchText)) {
+                card.style.display = "block";
                 found = true;
             } else {
                 card.style.display = "none";
             }
+
         });
 
-        noResults.style.display = found ? "none" : "block"; 
+        if (found) {
+            noResults.style.display = "none";
+        } else {
+            noResults.style.display = "block";
+        }
     });
 
     clearSearch.addEventListener("click", function () {
+
         searchBox.value = "";
 
         teamCards.forEach(function (card) {
-            card.style.display = "";
+            card.style.display = "block";
         });
 
         noResults.style.dislpay = "none";
+        
     });
 
 });
