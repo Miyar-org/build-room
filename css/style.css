@@ -55,17 +55,28 @@ body.menuaction .landing .menupage .menubg {
 }
 
 
+.landing .menupage .menu {
+    width: 100vw;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
 .landing .menupage .index {
     top: 1vh;
     position: relative;
     z-index: 6;
-    width: 100%;
+    width:fit-content;
     height: inherit;
 
 }
 
 
 .landing .menupage .index .indexhead {
+    font-family: 'Bodoni Modo', serif;
+    font-weight: 500;
     color: #E2A54D;
     text-align: center;
     opacity: 0;
@@ -74,7 +85,22 @@ body.menuaction .landing .menupage .menubg {
 
 
 body.menuaction .landing .menupage .index .indexhead {
-    animation: fadein 0.25s 0.5s forwards;
+    animation: fadein 0.2s 0.3s forwards;
+}
+
+
+.landing .menupage .index .indexitems {
+    position: inherit;
+    left: 40vw;
+    text-align: left;
+    color: #2D5652;
+    opacity: 0;
+    z-index: 6;
+}
+
+
+body.menuaction .landing .menupage .index .indexitems {
+    animation: faderight 0.30s 0.5s forwards;
 }
 
 
@@ -196,6 +222,18 @@ body.menuaction .landing .menupage .index .indexhead {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+@keyframes faderight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
 
@@ -326,9 +364,15 @@ body.menuaction .landing .menupage .index .indexhead {
 
 
     .landing .menupage .index .indexhead {
-        font-size: 10vw;
+        font-size: 10vh;
+        letter-spacing: 0.8vh;
     }
 
+
+    .menupage .index .indexitems {
+        font-size: 4vh;
+        letter-spacing: 0.6vh;
+    }
 
 }
 
@@ -455,9 +499,16 @@ body.menuaction .landing .menupage .index .indexhead {
 
 
     .landing .menupage .index .indexhead {
-        font-size: 10vh;
+        font-size: 10vw;
+        letter-spacing: 1vw;
     }
     
+
+    .menupage .index .indexitems {
+        font-size: 4vw;
+        letter-spacing: 0.6vw;
+    }
+
 }
 
 
