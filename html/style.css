@@ -380,3 +380,10 @@ html {
 body {
     min-height: 100vh;
 }
+
+#memberCount {
+    text-align: center;
+    color: #888888;
+    font-size: 15px;
+    margin: -15px auto 30px;
+}
