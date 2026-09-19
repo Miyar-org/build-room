@@ -232,23 +232,25 @@ html {
 .back-to-top {
     display: block;
     width: fit-content;
-    margin: 30px auto;
+    margin: 40px auto 30px;
     padding: 10px 18px;
     background-color: #ffffff;
     color: #000000;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .back-to-top:hover {
     background-color: #cccccc;
+    transform: translateY(-2px)
 }
 
 .Team:focus {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
 }
 
 .members-title {
@@ -341,4 +343,41 @@ html {
     nav a {
         padding: 7px 10px;
     }
+}
+
+@media (max-width: 600px) {
+    .Team p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 600px) {
+    .Team h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Team h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    #teamSearch {
+        font-size: 15px;
+        padding: 13px 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Team {
+        padding: 22px;
+        border-radius: 14px;
+    }
+}
+
+body {
+    min-height: 100vh;
 }
