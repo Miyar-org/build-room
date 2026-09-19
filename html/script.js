@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         noResults.style.display = "none";
 
-        memberCount.textContent = "Showing " + teamCards.length + " members";
+        memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
 
     });
 
@@ -74,5 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });  
 
      });
+
+     memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
 
 });
