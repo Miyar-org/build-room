@@ -220,37 +220,31 @@ body.menuaction .landing .menupage .index .indexitems {
     letter-spacing: 1px;
 }
 
-.tm-headings {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
 .tm-headings h2 {
     font-size: 1.8rem;
     margin: 0;
     letter-spacing: 0.5px;
+    margin: 10px 0 10px 10px;
+    text-align: left;
 }
 
-.tm-text {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
+.interests {
+    text-align: left;
+}
+
+.projects {
+    text-align: center;
+}
+
+.skills {
+    text-align: right;
 }
 
 .tm-text p {
-    font-size: 1.15rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 0;
-}
-
-.tm-lists {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+    margin: 0 5px 0 5px;
 }
 
 .tm-lists ul {
@@ -261,6 +255,7 @@ body.menuaction .landing .menupage .index .indexitems {
 .tm-lists li {
     font-size: 1.1rem;
     line-height: 1.7;
+    text-align: left;
 }
 
 /* --- */
