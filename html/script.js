@@ -6,12 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const noResults = document.getElementById("noResults");
     const memberCount = document.getElementById("memberCount");
     const savedSearch = localStorage.getItem("teamSearch");
+    const searchStatus = document.getElementById("searchStatus");
 
     searchBox.addEventListener("input", function () {
 
         localStorage.setItem("teamSearch", searchBox.value);
 
         const searchText = searchBox.value.toLowerCase();
+        if (searchBox.value.trim() !== "") {
+            searchStatus.textContent = 'Searching for: "' + searchBox.value.trim() + '"';
+        } else {
+            searchStatus.textContent = "";
+        }
         let found = false;
 
         teamCards.forEach(function (card) {
@@ -56,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem("teamSearch");
 
         searchBox.value = "";
+        searchStatus.textContent = "";
 
         teamCards.forEach(function (card) {
             card.style.display = "block";
