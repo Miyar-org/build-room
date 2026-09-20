@@ -4,8 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const teamCards = document.querySelectorAll(".Team")
     const clearSearch = document.getElementById("clearSearch");
     const noResults = document.getElementById("noResults");
+    const memberCount = document.getElementById("memberCount");
+    const savedSearch = localStorage.getItem("teamSearch");
 
     searchBox.addEventListener("input", function () {
+
+        localStorage.setItem("teamSearch", searchBox.value);
 
         const searchText = searchBox.value.toLowerCase();
         let found = false;
@@ -26,6 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             noResults.style.display = "block";
         }
+
+        let visibleMembers = 0;
+
+        teamCards.forEach(function (card) {
+            if (card.style.display !== "none") {
+                visibleMembers++;
+
+            }
+        });
+
+        memberCount.textContent = "Showing " + visibleMembers + (visibleMembers === 1 ? " member" : " members");
     });
 
     searchBox.addEventListener("keydown", function (event) {
@@ -46,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         noResults.style.display = "none";
 
+        memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
+
     });
 
     teamCards.forEach(function (card) {
@@ -60,5 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });  
 
      });
+
+     memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
 
 });

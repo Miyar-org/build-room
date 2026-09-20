@@ -383,7 +383,8 @@ body {
 
 #memberCount {
     text-align: center;
-    color: #888888;
+    color: #aaaaaa;
     font-size: 15px;
     margin: -15px auto 30px;
+    font-weight: bold;
 }
