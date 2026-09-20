@@ -96,7 +96,7 @@ body.menuaction .landing .menupage .index .indexhead {
 
 .landing .menupage .index .indexitems {
     position: inherit;
-    left: 40vw;
+    /* left: 40vw; */
     text-align: left;
     opacity: 0;
     z-index: 6;
@@ -162,7 +162,8 @@ body.menuaction .landing .menupage .index .indexitems {
 .pane3 {
     position: relative;
     width: 100%;
-    padding-bottom: 40px;
+    height: 103vh;
+    /* padding-bottom: 40px; */
     box-sizing: border-box;
     /* background-color: #2D5652; */
     background-color: #EFEAE6;
@@ -170,7 +171,7 @@ body.menuaction .landing .menupage .index .indexitems {
 
 /* Tashfeen: CSS addition to Pane3 */
 
-.abtpane {
+/* .abtpane {
     padding: 10px;
 }
 
@@ -201,7 +202,63 @@ body.menuaction .landing .menupage .index .indexitems {
     letter-spacing: 0.2px;
     max-width: 800px;
     margin: 0 auto;
+} */
+
+
+.abtimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40vh; */
+    overflow: hidden;
 }
+
+
+.abtushead {
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    font-family: "Slabo 13px", serif;
+    color: #2D5652;
+    /* font-size: 10vh; */
+}
+
+
+.abtustxt {
+    padding-top: 1vh;
+    text-align: center;
+}
+
+
+.teamhead {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Slabo 13px", serif;
+    color: #2D5652;
+}
+
+
+.teamimg {
+    /* max-height: 70vh; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.teamcrd {
+    max-height: 70vh;
+    max-width: 90vw;
+}
+
+
 
 .pane4 {
     position: relative;
@@ -483,6 +540,23 @@ body.menuaction .landing .menupage .index .indexitems {
         letter-spacing: 0.6vh;
     }
 
+
+    .abtushead {
+        font-size: 7vh;
+        letter-spacing: 0.5vh;
+    }
+
+
+    .abtustxt {
+        font-size: 3vh;
+    }
+
+
+    .teamhead {
+        font-size: 7vh;
+        letter-spacing: 0.5vh;
+    }
+
 }
 
 
@@ -616,11 +690,28 @@ body.menuaction .landing .menupage .index .indexitems {
         letter-spacing: 0.6vw;
     }
 
+
+    .abtushead {
+        font-size: 7vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+    .abtustxt {
+        font-size: 3vw;
+    }
+
+
+    .teamhead {
+        font-size: 7vw;
+        letter-spacing: 0.5vw;
+    }
+
 }
 
 /* Tashfeen Miyar: added this for about section description */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .abt-title {
         margin: 0;
     }
@@ -636,6 +727,6 @@ body.menuaction .landing .menupage .index .indexitems {
         width: 100%;
         margin-bottom: 10px;
     }
-}
+} */
 
 /* --- */
