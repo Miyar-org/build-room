@@ -388,3 +388,12 @@ body {
     margin: -15px auto 30px;
     font-weight: bold;
 }
+
+#searchStatus {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: -20px auto 25px;
+    min-height: 18px;
+    transition: opacity 0.3s ease;
+}

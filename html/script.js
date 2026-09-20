@@ -1,83 +1,92 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Search elements
     const searchBox = document.getElementById("teamSearch");
-    const teamCards = document.querySelectorAll(".Team")
+    const teamCards = document.querySelectorAll(".Team");
     const clearSearch = document.getElementById("clearSearch");
-    const noResults = document.getElementById("noResults");
+    const noResults = document.getElementById(noResults);
     const memberCount = document.getElementById("memberCount");
+    const searchStatus = document.getElementById("searchStatus");
+
+    // Saved search
     const savedSearch = localStorage.getItem("teamSearch");
+    
+    // Keep original card order
+    const teamGrid = document.getElementById("team-members");
+    const originalCards = Array.from(teamCards);
 
-    searchBox.addEventListener("input", function () {
+    // Sort button
+    const sortMembers = document.getElementById("sortMmebers");
 
-        localStorage.setItem("teamSearch", searchBox.value);
+    // Statistics
+    const totalMembers = document.getElementVyId("totalMembers");
+    const visibleMembers = document.getElementById("visibleMembers");
+    const statisticsStatus = document.getElementById("statisticsStatus");
 
-        const searchText = searchBox.value.toLowerCase();
+    // Category filter
+    const categoryFilter = document.getElementById("categoryFilter");
+
+    // Search Function
+    function updateSearch() {
+
+        const searchText = searchBox.Value.toLowerCase().trim();
         let found = false;
+        let visibleCount = 0;
 
         teamCards.forEach(function (card) {
 
-            if (card.textContent.toLowerCase().includes(searchText)) {
-                card.style.display = "block";
+            const cardText = card.textContent.toLowerCase();
+
+            if(cardText.includes(searchText)) {
+
+                card.Style.display = "block";
                 found = true;
+                visibleCount++;
+
             } else {
+
                 card.style.display = "none";
+
             }
 
         });
 
+        // No results message
         if (found) {
+
             noResults.style.display = "none";
+
         } else {
+
             noResults.style.display = "block";
+
         }
 
-        let visibleMembers = 0;
+        // Member counter
+        memberCount.textContent =
+        "Showing " +
+        visibleCount +
+        (visibleCount === 1 ? " member" : " members");
 
-        teamCards.forEach(function (card) {
-            if (card.style.display !== "none") {
-                visibleMembers++;
+        // Search status
+        if (searchText !== "") {
 
-            }
-        });
+            searchStatus.textContent =
+            'Searching for: "' + searchBox.value.trim() + '"';
 
-        memberCount.textContent = "Showing " + visibleMembers + (visibleMembers === 1 ? " member" : " members");
-    });
+        } else {
 
-    searchBox.addEventListener("keydown", function (event) {
+            searchStatus.textContent = "";
 
-        if (event.key === "Escape") {
-            clearSearch.click();
+
         }
 
-    });
+        // Statistics
+        visibleMembers.textContent = visibleCount;
 
-    clearSearch.addEventListener("click", function () {
+        if (searchText === "") {
 
-        searchBox.value = "";
-
-        teamCards.forEach(function (card) {
-            card.style.display = "block";
-        });
-
-        noResults.style.display = "none";
-
-        memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
-
-    });
-
-    teamCards.forEach(function (card) {
-
-        card.addEventListener("keydown", function (event) {
-
-            if (event.key === "Enter") {
-                card.click();
-
-            }
-
-        });  
-
-     });
-
-     memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
-
-});
+            statisticsStatus
+        }
+    }
+}
