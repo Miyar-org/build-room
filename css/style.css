@@ -161,6 +161,7 @@ body.menuaction .landing .menupage .index .indexitems {
 
 .pane3 {
     position: relative;
+    /* overflow: scroll; */
     width: 100%;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -168,9 +169,61 @@ body.menuaction .landing .menupage .index .indexitems {
     background-color: #EFEAE6;
 }
 
+
+.who {
+    /* width: inherit; */
+    height: 70vh;
+}
+
+.who .whohead {
+    font-family: "Slabo 13px", serif;
+    text-align: center;
+    color: #2D5652;
+}
+
+
+.why {
+    height: 70vh;
+}
+
+.why .whyhead {
+    font-family: "Slabo 13px", serif;
+    text-align: center;
+    color: #2D5652;
+}
+
+
+.team {
+    height: 70vh;
+}
+
+.team .teamhead {
+    font-family: "Slabo 13px", serif;
+    text-align: center;
+    color: #2D5652;
+}
+
+
+.team .teamcrd {
+    display: flex;
+    height: 61vh;
+    /* width: inherit; */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamcard {
+    /* height: 60vh; */
+    /* width: inherit; */
+    max-width: 90vw;
+    max-height: 60vh;
+}
+
+
 /* Tashfeen: CSS addition to Pane3 */
 
-.abtpane {
+/* .abtpane {
     padding: 10px;
 }
 
@@ -452,6 +505,21 @@ body.menuaction .landing .menupage .index .indexitems {
     .menupage .index .indexitems {
         font-size: 4vh;
         letter-spacing: 0.6vh;
+    }
+
+
+    .who .whohead {
+        font-size: 7vh;
+    }
+
+
+    .team .teamhead {
+        font-size: 7vh;
+    }
+
+
+    .why .whyhead {
+        font-size: 7vh;
     }
 
 }
