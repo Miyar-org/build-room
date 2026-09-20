@@ -9,7 +9,14 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
+
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 
 /* dcmitul: do not fix the background colors in the body */
 
@@ -263,21 +270,122 @@ body.menuaction .landing .menupage .index .indexitems {
 .pane4 {
     position: relative;
     width: 100%;
-    box-sizing: border-box;
-    padding-bottom: 40px;
+    height: 103vh;
+
+    /* box-sizing: border-box; */
+    /* padding-bottom: 40px; */
     background-color: #E2A54D;
-    color: #EFEAE6;
+    /* color: #EFEAE6; */
     /* background-color: #0C2C47; */
 }
 
-.name1 {
+
+.n1pane {
+    min-height: 95vh;
+}
+
+
+.n1intro {
+    width: 100%;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.n1introstff {
+    max-width: 80vw;
+
+}
+
+
+.n1introhead {
+    position: relative;
+    font-family: "Slabo 13px", serif;
+    text-align: center;
+    color: #EFEAE6;
+}
+
+
+.n1introtxt {
+    position: relative;
+    text-align: center;
+    color: #eff0cb;
+
+}
+
+
+.n1stuff {
+    /* display: flex; */
+    padding-top: 5vh;
+    /* padding-bottom: 2vh; */
+}
+
+
+.n1head {
+    font-family: "Slabo 13px", serif;
+    color: #EFEAE6;
+    text-align: center;
+}
+
+
+.n1txt {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.n1txt a {
+    color: #eff0cb;
+}
+
+
+.n1list {
+    color: #eff0cb;
+    /* text-align: left; */
+}
+
+
+.nlinks {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.logo {
+    height: 5vh;
+}
+
+
+
+/* Tashfeen's code */
+
+/* .name1 {
     padding: 20px;
     text-align: center;
     font-size: 2.5rem;
     letter-spacing: 1px;
 }
 
-.tm-headings h2 {
+ */
+
+
+/* .tm-headings h2 {
     font-size: 1.8rem;
     margin: 0;
     letter-spacing: 0.5px;
@@ -359,7 +467,7 @@ body.menuaction .landing .menupage .index .indexitems {
     margin-bottom: 8px;
 }
 
-/* --- */
+--- */
 
 .pane5 {
     position: relative;
@@ -557,6 +665,28 @@ body.menuaction .landing .menupage .index .indexitems {
         letter-spacing: 0.5vh;
     }
 
+
+    .n1introhead {
+        font-size: 5vh;
+        letter-spacing: 0.5vh;
+    }
+
+
+    .n1introtxt {
+        font-size: 3vh;
+    }
+
+
+    .n1head {
+        font-size: 5vh;
+        letter-spacing: 0.5vh;
+    }
+
+
+    .n1txt {
+        font-size: 3vh;
+    }
+
 }
 
 
@@ -705,6 +835,17 @@ body.menuaction .landing .menupage .index .indexitems {
     .teamhead {
         font-size: 7vw;
         letter-spacing: 0.5vw;
+    }
+
+
+    .n1introhead {
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+    .n1introtxt {
+        font-size: 3vw;
     }
 
 }
