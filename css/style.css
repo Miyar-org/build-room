@@ -224,8 +224,6 @@ body.menuaction .landing .menupage .index .indexitems {
     font-size: 1.8rem;
     margin: 0;
     letter-spacing: 0.5px;
-    margin: 10px 0 10px 10px;
-    text-align: left;
 }
 
 .interests {
@@ -240,11 +238,29 @@ body.menuaction .landing .menupage .index .indexitems {
     text-align: right;
 }
 
+.tm-headings, .tm-text, .tm-lists {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.tm-headings {
+    padding: 10px 20px;
+}
+
+.tm-text {
+    padding: 10px 20px;
+}
+
+.tm-lists {
+    padding: 0 20px;
+}
+
 .tm-text p {
     font-size: 1rem;
     line-height: 1.6;
     margin: 0;
-    margin: 0 5px 0 5px;
 }
 
 .tm-lists ul {
@@ -255,7 +271,6 @@ body.menuaction .landing .menupage .index .indexitems {
 .tm-lists li {
     font-size: 1.1rem;
     line-height: 1.7;
-    text-align: left;
 }
 
 /* --- */
