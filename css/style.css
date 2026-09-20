@@ -163,8 +163,8 @@ body.menuaction .landing .menupage .index .indexitems {
     position: relative;
     /* overflow: scroll; */
     width: 100%;
-    /* padding-bottom: 40px; */
-    /* box-sizing: border-box; */
+    padding-bottom: 40px;
+    box-sizing: border-box;
     /* background-color: #2D5652; */
     background-color: #EFEAE6;
 }
@@ -273,37 +273,47 @@ body.menuaction .landing .menupage .index .indexitems {
     letter-spacing: 1px;
 }
 
-.tm-headings {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
 .tm-headings h2 {
     font-size: 1.8rem;
     margin: 0;
     letter-spacing: 0.5px;
 }
 
-.tm-text {
+.interests {
+    text-align: left;
+}
+
+.projects {
+    text-align: center;
+}
+
+.skills {
+    text-align: right;
+}
+
+.tm-headings, .tm-text, .tm-lists {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
 }
 
-.tm-text p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    margin: 0;
+.tm-headings {
+    padding: 10px 20px;
+}
+
+.tm-text {
+    padding: 10px 20px;
 }
 
 .tm-lists {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
+}
+
+.tm-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 .tm-lists ul {
@@ -643,21 +653,6 @@ body.menuaction .landing .menupage .index .indexitems {
     .menupage .index .indexitems {
         font-size: 4vw;
         letter-spacing: 0.6vw;
-    }
-
-
-    .who .whohead {
-        font-size: 7vw;
-    }
-
-
-    .team .teamhead {
-        font-size: 7vw;
-    }
-
-
-    .why .whyhead {
-        font-size: 7vw;
     }
 
 }

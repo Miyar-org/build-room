@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearSearch.addEventListener("click", function () {
 
+        localStorage.removeItem("teamSearch");
+
         searchBox.value = "";
 
         teamCards.forEach(function (card) {
@@ -79,5 +81,10 @@ document.addEventListener("DOMContentLoaded", function () {
      });
 
      memberCount.textContent = "Showing " + teamCards.length + (teamCards.length === 1 ? " member" : " members");
+
+     if (savedSearch) {
+        searchBox.value = savedSearch;
+        searchBox.dispatchEvent(new Event("input"));
+     }
 
 });
