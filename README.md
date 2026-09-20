@@ -22,6 +22,7 @@ Build Room is our space to introduce ourselves, share our projects, and document
 - Pure.css
 
 ## Project Structure
+```
 
 build-room/
 ├── index.html
@@ -37,6 +38,7 @@ build-room/
 ├── LICENSE
 └── README.md
 
+```
 ## Status
 
 Complete(for now)!
