@@ -230,11 +230,23 @@ body.menuaction .landing .menupage .index .indexitems {
     text-align: left;
 }
 
+.interests ul, li {
+    text-align: left;
+}
+
 .projects {
     text-align: center;
 }
 
+.projects ul, li {
+    text-align: center;
+}
+
 .skills {
+    text-align: right;
+}
+
+.skills ul, li {
     text-align: right;
 }
 
@@ -271,6 +283,23 @@ body.menuaction .landing .menupage .index .indexitems {
 .tm-lists li {
     font-size: 1.1rem;
     line-height: 1.7;
+}
+
+.tm-column {
+    box-sizing: border-box;
+    padding: 0 2%;
+}
+
+.tm-column .tm-lists {
+    width: 100%;
+}
+
+.tm-column ul {
+    margin-top: 15px;
+}
+
+.tm-column li {
+    margin-bottom: 8px;
 }
 
 /* --- */
