@@ -391,8 +391,9 @@ body {
 
 #searchStatus {
     text-align: center;
-    color: #777777;
+    color: #aaaaaa;
     font-size: 14px;
     margin: -20px auto 25px;
     min-height: 18px;
+    transition: opacity 0.3s ease;
 }
