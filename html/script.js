@@ -42,7 +42,51 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.Style.display = "block";
                 found = true;
                 visibleCount++;
+
+            } else {
+
+                card.style.display = "none";
+
             }
+
+        });
+
+        // No results message
+        if (found) {
+
+            noResults.style.display = "none";
+
+        } else {
+
+            noResults.style.display = "block";
+
+        }
+
+        // Member counter
+        memberCount.textContent =
+        "Showing " +
+        visibleCount +
+        (visibleCount === 1 ? " member" : " members");
+
+        // Search status
+        if (searchText !== "") {
+
+            searchStatus.textContent =
+            'Searching for: "' + searchBox.value.trim() + '"';
+
+        } else {
+
+            searchStatus.textContent = "";
+
+
+        }
+
+        // Statistics
+        visibleMembers.textContent = visibleCount;
+
+        if (searchText === "") {
+
+            statisticsStatus
         }
     }
 }
