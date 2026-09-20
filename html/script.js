@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem("teamSearch");
 
         searchBox.value = "";
+        searchStatus.textContent = "";
 
         teamCards.forEach(function (card) {
             card.style.display = "block";
