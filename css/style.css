@@ -222,7 +222,7 @@ body.menuaction .landing .menupage .index .indexitems {
 
 
 .abtushead {
-    padding-top: 1vh;
+    padding-top: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,7 +241,7 @@ body.menuaction .landing .menupage .index .indexitems {
 
 
 .teamhead {
-    padding-top: 1vh;
+    padding-top: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,6 +337,7 @@ body.menuaction .landing .menupage .index .indexitems {
     align-items: center;
     
 }
+
 
 
 .n1txt a {
@@ -586,7 +587,7 @@ body.menuaction .landing .menupage .index .indexitems {
     }
 
 
-    .pane4 .name1 {
+    .name1 {
         display: flex;
         position: relative;
         justify-content: center;
@@ -758,7 +759,7 @@ body.menuaction .landing .menupage .index .indexitems {
         text-align: center;
     }
 
-    .pane4 .name1 {
+    .name1 {
         display: flex;
         position: relative;
         justify-content: center;
@@ -845,6 +846,17 @@ body.menuaction .landing .menupage .index .indexitems {
 
 
     .n1introtxt {
+        font-size: 3vw;
+    }
+
+
+    .n1head {
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+    }
+
+
+    .n1txt {
         font-size: 3vw;
     }
 
